@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -43,7 +43,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.975;
   visibility: hidden;
 
   &.show {
@@ -87,13 +87,13 @@
       transform: translate3d(0, 0, 0);
     }
 
-    .portrait {
-      width: 300px;
-      height: 300px;
+   /* .portrait {
+      width: 200px;
+      height: 200px;
       background: $portrait-image;
       border-radius: 50%;
       border: solid 3px $secondary-color;
-    }
+    }*/
   }
 
   .nav-item {
@@ -116,7 +116,7 @@
     font-size: 30px;
     text-transform: 1rem;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
